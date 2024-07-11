@@ -1,7 +1,12 @@
 #!/usr/bin/python3
 """ Module for 0-minoperations"""
 
+
 def minOperations(n: int) -> int:
+    """
+    getting the min operation
+    to copy all and paste H
+    """
     if n <= 1:
         return 0
     
