@@ -12,10 +12,10 @@ def minOperations(n: int) -> int:
     operations: int = 0
     divisor: int = 2
 
-    if n <= 1:
+    if (n <= 1):
         return operations
 
-    while n > 1:
+    while (n > 1):
         while n % divisor == 0:
             operations += divisor
             n //= divisor
