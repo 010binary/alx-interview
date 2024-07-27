@@ -23,13 +23,13 @@ def validUTF8(data):
 
         if remaining_bytes == 0:
             # This byte starts a new character
-            if byte >> 5 == 0b110:     # 2-byte character
+            if byte >> 5 == 0b110:
                 remaining_bytes = 1
-            elif byte >> 4 == 0b1110:  # 3-byte character
+            elif byte >> 4 == 0b1110:
                 remaining_bytes = 2
-            elif byte >> 3 == 0b11110: # 4-byte character
+            elif byte >> 3 == 0b11110:
                 remaining_bytes = 3
-            elif byte >> 7:            # Invalid start byte
+            elif byte >> 7:
                 return False
         else:
             # This should be a continuation byte
