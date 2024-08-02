@@ -1,5 +1,11 @@
 #!/usr/bin/python3
+"""_summary_
+
+    Returns:
+        _type_: _description_
+"""
 import sys
+
 
 def is_safe(board, row, col):
     """ Check if it's safe to place a queen at board[row][col] """
