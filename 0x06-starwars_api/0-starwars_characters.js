@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-const request = require("request");
-const baseurl = "https://swapi-api.hbtn.io/api/films/"
+const request = require('request');
+const baseurl = 'https://swapi-api.hbtn.io/api/films/';
 const urlMovie = baseurl + process.argv[2];
 
 request(urlMovie, async function (error, response, body) {
@@ -21,7 +21,7 @@ request(urlMovie, async function (error, response, body) {
   actors.forEach((actor) => console.log(actor));
 });
 
-function myCharacter(thisCharacter) {
+function myCharacter (thisCharacter) {
   return new Promise((resolve, reject) => {
     request(thisCharacter, function (error, response, body) {
       if (error) {
@@ -31,4 +31,3 @@ function myCharacter(thisCharacter) {
     });
   });
 }
-
