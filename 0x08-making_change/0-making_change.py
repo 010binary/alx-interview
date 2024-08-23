@@ -2,7 +2,7 @@
 """ fewest number of coins needed """
 
 
-def makeChange(coins:list, total:int) -> int:
+def makeChange(coins: list, total: int) -> int:
     """ fewest number of coins needed
 
     Args:
