@@ -5,6 +5,8 @@ solving the perimeter thing
 
 
 def island_perimeter(grid):
+    """A function that returns the perimeter
+    of the island described in grid"""
     perimeter = 0
 
     rows = len(grid)
